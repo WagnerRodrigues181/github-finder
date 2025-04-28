@@ -1,54 +1,82 @@
-# React + TypeScript + Vite
+# Github Finder 🔍 (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação React que permite buscar informações de usuários no GitHub. Com a integração do React Router, o sistema navega entre a página inicial e uma página de repositórios específicos de cada usuário. Ideal para quem deseja explorar perfis de desenvolvedores e seus projetos.
 
-Currently, two official plugins are available:
+<!--
+Inserir a imagem aqui
+![image](https://github.com/user-attachments/assets/ae958ce3-02a0-4942-98da-6bce55b97956)
+-->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚛️ React
+- 📘 TypeScript
+- ⚡ Vite
+- 🛣️ React Router Dom
+- 🎨 CSS Modules
+- 🔗 Fetch API
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📋 Funcionalidades
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Busca de usuários do GitHub**: Pesquise qualquer usuário e visualize seu perfil.
+- **Visualização de repositórios**: Veja os 5 repositórios mais estrelados de um usuário.
+- **Navegação por páginas**: Roteamento entre as páginas Home e Repos com React Router.
+- **Feedback visual**: Mensagens de erro e carregamento durante as requisições.
+- **Design modularizado**: Componentes reutilizáveis para uma estrutura de código limpa e eficiente.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 🧠 O que foi explorado nesse projeto
+
+- **React Router** para navegação entre páginas e rotas dinâmicas.
+- **Manipulação de estados complexos** com hooks (`useState`, `useEffect`).
+- **Uso da Fetch API** para integrar com o GitHub API e manipular dados de usuários e repositórios.
+- **Componentização**: Criação de componentes como `User`, `Repo`, `Search`, entre outros, para manter o código modular e reutilizável.
+- **Estilos com CSS Modules**: Isolamento de estilos por componente, evitando conflitos globais.
+
+---
+
+## 🛠️ Como rodar o projeto localmente
+
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/SEU_USUARIO/github-finder.git
+    ```
+
+2. Instale as dependências:
+    ```bash
+    npm install
+    ```
+
+3. Rode o projeto:
+    ```bash
+    npm run dev
+    ```
+
+4. Acesse via:
+    ```bash
+    http://localhost:5173
+    ```
+
+---
+
+## 💡 Como contribuir
+
+1. Faça o fork deste repositório.
+2. Crie uma branch para sua funcionalidade:
+    ```bash
+    git checkout -b nome-da-branch
+    ```
+3. Faça suas alterações e commit:
+    ```bash
+    git commit -m "feat: descrição da funcionalidade"
+    ```
+4. Envie a branch:
+    ```bash
+    git push origin nome-da-branch
+    ```
+5. Crie um Pull Request explicando suas mudanças.
