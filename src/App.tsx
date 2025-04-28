@@ -1,7 +1,12 @@
+import { Outlet } from "react-router-dom";
+
 function App() {
   return (
     <>
-      <h1>Iniciando o Projeto</h1>
+      <div className="App">
+        <h1>Github Finder</h1>
+        <Outlet />
+      </div>
     </>
   );
 }
