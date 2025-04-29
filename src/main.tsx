@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Pages
 import Home from "./routes/Home.tsx";
+import Repos from "./routes/Repos.tsx";
 
 // App será o componente principal. Ele se repete em todas as pgs.
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/repos/:username",
+        element: <Repos />,
       },
     ],
   },
