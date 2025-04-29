@@ -1,0 +1,25 @@
+.back_btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #dbe2ff;
+  background-color: #1f2a53;
+  border: 2px solid #9da5d1;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.95;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.back_btn:hover {
+  opacity: 1;
+  background-color: #2b3566;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  transform: translateY(-2px);
+}
