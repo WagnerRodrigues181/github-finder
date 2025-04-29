@@ -42,7 +42,7 @@ Este projeto é uma aplicação React que permite buscar informações de usuár
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/SEU_USUARIO/github-finder.git
+    git clone https://github.com/WagnerRodrigues181/github-finder.git
     ```
 
 2. Instale as dependências:
