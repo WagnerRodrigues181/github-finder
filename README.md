@@ -3,7 +3,8 @@
 Este projeto é uma aplicação React que permite buscar informações de usuários no GitHub. Com a integração do React Router, o sistema navega entre a página inicial e uma página de repositórios específicos de cada usuário. Ideal para quem deseja explorar perfis de desenvolvedores e seus projetos.
 
 
-![Screenshot_3](https://github.com/user-attachments/assets/bd16719c-71b4-42cf-b646-1e501f8a95fe)
+![GithubFinder_gif](https://github.com/user-attachments/assets/c10f9c2c-dcfe-4bbe-a8fe-19c9bbf9db12)
+
 
 ---
 
